@@ -51,14 +51,16 @@ function App() {
   return (
     <div className="App">
       <div className="app2">
+        <h1>Tenzies</h1>
+        <h2>Roll until all dice are the same. Click each die to freeze it at its current value between rolls</h2>
       <div className="dice">
 { tenzies &&  <Confetti />}
       {diceRoll} 
       
-      
+      </div>
    
      <div className='button11'><button className="button" onClick={() => diceRolling()}>{ tenzies ? "Reset New Game" : "Roll the Dice" }</button></div>
-     </div></div></div>
+     </div></div>
   );
 }
 
